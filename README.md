@@ -8,6 +8,10 @@ Modifying the `$NODE_PATH` env var will change where node looks for code when us
 
 One downside to this approach is that these internal modules can't have their own package.json files (well they can, but the modules won't be installed when running `npm install`).
 
+http://lostechies.com/derickbailey/2014/02/20/how-i-work-around-the-require-problem-in-nodejs/
+
+https://gist.github.com/branneman/8048520
+
 The following is an example `package.json` that does something similar, and does install npm packages from local modules, but is confusing.
 
 ```
